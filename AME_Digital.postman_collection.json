@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "4154a56b-1191-4c36-8382-4099966f39f9",
+		"name": "AME Digital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Planet New",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "SWAPI/StarWarsGame"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"climate\": \"quente\",\n  \"name\": \"Terra\",\n  \"terrain\": \"Terra\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/planet/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Planet Exist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": " SWAPI/StarWarsGame"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"climate\": \"quente\",\n  \"name\": \"Alderaan\",\n  \"terrain\": \"Terra\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/planet/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Planet Not Exist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": " SWAPI/StarWarsGame"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/planet/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Planet Many",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": " SWAPI/StarWarsGame"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"climate\": \"quente\",\n  \"name\": \"E\",\n  \"terrain\": \"Terra\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/planet/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apaga Planet",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": " SWAPI/StarWarsGame"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/planet/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listPlanet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": " SWAPI/StarWarsGame"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/planet/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": " SWAPI/StarWarsGame"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/planet/find/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"find",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByNameWithSpace",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": " SWAPI/StarWarsGame"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/planet/find/ ss",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"find",
+						" ss"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByName",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": " SWAPI/StarWarsGame"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/planet/find/Terra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"find",
+						"Terra"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
