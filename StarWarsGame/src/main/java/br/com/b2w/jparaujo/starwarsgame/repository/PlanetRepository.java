@@ -1,6 +1,6 @@
-package br.com.ame.jparaujo.starwarsgame.repository;
+package br.com.b2w.jparaujo.starwarsgame.repository;
 
-import br.com.ame.jparaujo.starwarsgame.entity.Planet;
+import br.com.b2w.jparaujo.starwarsgame.entity.Planet;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

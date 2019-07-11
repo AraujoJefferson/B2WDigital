@@ -1,6 +1,6 @@
-package br.com.ame.jparaujo.starwarsgame.dto;
+package br.com.b2w.jparaujo.starwarsgame.dto;
 
-import br.com.ame.jparaujo.starwarsgame.entity.Planet;
+import br.com.b2w.jparaujo.starwarsgame.entity.Planet;
 
 import java.util.List;
 

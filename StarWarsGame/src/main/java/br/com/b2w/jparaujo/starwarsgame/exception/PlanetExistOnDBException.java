@@ -1,4 +1,4 @@
-package br.com.ame.jparaujo.starwarsgame.exception;
+package br.com.b2w.jparaujo.starwarsgame.exception;
 
 public class PlanetExistOnDBException extends RuntimeException {
     public PlanetExistOnDBException() {

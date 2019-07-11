@@ -1,4 +1,4 @@
-package br.com.ame.jparaujo.starwarsgame;
+package br.com.b2w.jparaujo.starwarsgame;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

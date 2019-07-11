@@ -1,4 +1,4 @@
-package br.com.ame.jparaujo.starwarsgame.constant;
+package br.com.b2w.jparaujo.starwarsgame.constant;
 
 public class ApplicationConstants {
 

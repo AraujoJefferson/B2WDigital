@@ -1,6 +1,6 @@
-package br.com.ame.jparaujo.starwarsgame.exception;
+package br.com.b2w.jparaujo.starwarsgame.exception;
 
-import br.com.ame.jparaujo.starwarsgame.constant.ApplicationConstants;
+import br.com.b2w.jparaujo.starwarsgame.constant.ApplicationConstants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpHeaders;

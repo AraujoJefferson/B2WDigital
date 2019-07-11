@@ -1,11 +1,12 @@
-package br.com.ame.jparaujo.starwarsgame.business;
+package br.com.b2w.jparaujo.starwarsgame.business;
 
-import br.com.ame.jparaujo.starwarsgame.constant.ApplicationConstants;
-import br.com.ame.jparaujo.starwarsgame.dto.PlanetsDTO;
-import br.com.ame.jparaujo.starwarsgame.endpoints.PlanetsEndpoint;
-import br.com.ame.jparaujo.starwarsgame.exception.*;
-import br.com.ame.jparaujo.starwarsgame.entity.Planet;
-import br.com.ame.jparaujo.starwarsgame.repository.PlanetRepository;
+import br.com.b2w.jparaujo.starwarsgame.constant.ApplicationConstants;
+import br.com.b2w.jparaujo.starwarsgame.dto.PlanetsDTO;
+import br.com.b2w.jparaujo.starwarsgame.endpoints.PlanetsEndpoint;
+import br.com.b2w.jparaujo.starwarsgame.exception.*;
+import br.com.b2w.jparaujo.starwarsgame.entity.Planet;
+import br.com.b2w.jparaujo.starwarsgame.exception.*;
+import br.com.b2w.jparaujo.starwarsgame.repository.PlanetRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.http.*;

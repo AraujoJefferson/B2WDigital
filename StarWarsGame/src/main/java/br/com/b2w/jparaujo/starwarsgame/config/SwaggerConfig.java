@@ -1,6 +1,6 @@
-package br.com.ame.jparaujo.starwarsgame.config;
+package br.com.b2w.jparaujo.starwarsgame.config;
 
-import br.com.ame.jparaujo.starwarsgame.constant.ApplicationConstants;
+import br.com.b2w.jparaujo.starwarsgame.constant.ApplicationConstants;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -32,7 +32,7 @@ public class SwaggerConfig {
     public Docket api(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.ame.jparaujo.starwarsgame.endpoints"))
+                .apis(RequestHandlerSelectors.basePackage("br.com.b2w.jparaujo.starwarsgame.endpoints"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo())

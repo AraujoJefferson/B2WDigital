@@ -1,5 +1,5 @@
 # StarWarsGame
-Solução para desafio AME Digital. API com dados de planetas da franquia Star Wars.
+Solução para desafio B2W Digital. API com dados de planetas da franquia Star Wars.
 
 - [Pré-requisitos](#pré-requisitos)
 - [Instruções](#instruções)
@@ -34,7 +34,7 @@ A partir de agora você poderá acessar os serviços pelos [endpoints](#endpoint
 Existe uma documentação dos servicos montada usando swagger que pode ser acessada pelo link, após executar os passos acima, segue abaixo:
 > http://localhost:8080/swagger-ui.html
 
-Caso tenha o Postman instalado poderá baixar e importar as chamadas clicando [aqui](https://github.com/AraujoJefferson/AMEDigital/blob/master/AME_Digital.postman_collection.json).
+Caso tenha o Postman instalado poderá baixar e importar as chamadas clicando [aqui](https://github.com/AraujoJefferson/B2WDigital/blob/master/B2W_Digital.postman_collection.json).
 
 Endpoints necessário para consumir os serviços da aplicação:
 - Adiciona Planetas

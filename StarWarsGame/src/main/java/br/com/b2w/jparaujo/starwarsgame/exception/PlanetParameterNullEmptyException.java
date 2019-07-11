@@ -1,4 +1,4 @@
-package br.com.ame.jparaujo.starwarsgame.exception;
+package br.com.b2w.jparaujo.starwarsgame.exception;
 
 public class PlanetParameterNullEmptyException extends RuntimeException {
     public PlanetParameterNullEmptyException() {

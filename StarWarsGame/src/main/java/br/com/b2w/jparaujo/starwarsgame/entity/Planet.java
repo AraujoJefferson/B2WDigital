@@ -1,6 +1,6 @@
-package br.com.ame.jparaujo.starwarsgame.entity;
+package br.com.b2w.jparaujo.starwarsgame.entity;
 
-import br.com.ame.jparaujo.starwarsgame.constant.ApplicationConstants;
+import br.com.b2w.jparaujo.starwarsgame.constant.ApplicationConstants;
 
 import javax.persistence.*;
 import java.util.List;

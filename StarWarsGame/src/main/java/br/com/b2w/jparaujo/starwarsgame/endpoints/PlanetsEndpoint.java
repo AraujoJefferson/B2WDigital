@@ -1,9 +1,9 @@
-package br.com.ame.jparaujo.starwarsgame.endpoints;
+package br.com.b2w.jparaujo.starwarsgame.endpoints;
 
-import br.com.ame.jparaujo.starwarsgame.constant.ApplicationConstants;
-import br.com.ame.jparaujo.starwarsgame.business.PlanetBusiness;
-import br.com.ame.jparaujo.starwarsgame.entity.Planet;
-import br.com.ame.jparaujo.starwarsgame.repository.PlanetRepository;
+import br.com.b2w.jparaujo.starwarsgame.constant.ApplicationConstants;
+import br.com.b2w.jparaujo.starwarsgame.business.PlanetBusiness;
+import br.com.b2w.jparaujo.starwarsgame.entity.Planet;
+import br.com.b2w.jparaujo.starwarsgame.repository.PlanetRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
