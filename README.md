@@ -1,5 +1,5 @@
 # StarWarsGame
-Solução para desafio B2W Digital. API com dados de planetas da franquia Star Wars.
+Solução para desafio AME Digital. API com dados de planetas da franquia Star Wars.
 
 - [Pré-requisitos](#pré-requisitos)
 - [Instruções](#instruções)
@@ -11,6 +11,7 @@ Solução para desafio B2W Digital. API com dados de planetas da franquia Star W
 - Java 1.8.0_162
 - Maven 3.3.9
 - Intellij IDEA
+- Docker 17.05.0-ce
 
 ## Instruções
 
@@ -19,9 +20,13 @@ Fazer o checkout do projeto via GitHub e na raiz do projeto executar o comando a
 
 ``` mvn clean install ```
 
+Após a execução gerar a imagem docker da aplicação, exemplo comando abaixo:
+ 
+``` docker build -t jeffersonaraujop/ubuntu_java8 . ```
+
 Com o build realizado com sucesso, a aplicação pode ser executada através da linha de comando abaixo via terminal:
 
-```java -jar target/starwarsgame-1.0-SNAPSHOT.jar ```
+``` docker run -it -p 8080:8080 jeffersonaraujo/ubuntu-java8:latest ```
 
 A partir de agora você poderá acessar os serviços pelos [endpoints](#endpoints).
 
@@ -31,13 +36,13 @@ Existe uma documentação dos servicos montada usando swagger que pode ser acess
 
 Endpoints necessário para consumir os serviços da aplicação:
 - Adiciona Planetas
-	> **POST** http://localhost:8080/
+	> **POST** http://localhost:8080/planet/add
     
     - **REQUEST**
     ```	
         header  {
                     Content-Type:application/json
-		    User-Agent: SWAPI/StarWarsGame
+		            User-Agent: SWAPI/StarWarsGame
                 }
     ```
     ```
@@ -54,24 +59,26 @@ Endpoints necessário para consumir os serviços da aplicação:
          - 500 - Erro ao tentar acessar o SWAPI
     
 - Listar Planetas
-	> **GET** http://localhost:8080/list
+	> **GET** http://localhost:8080/planet/list
 
     - **REQUEST**
     ```	
         header  {
                     Content-Type:application/json
+		            User-Agent: SWAPI/StarWarsGame
                 }
     ```
     - **RESPONSE**
         - 200 - Lista retornada com sucesso
              
 - Encontrar Planeta por Id
-    > **GET** http://localhost:8080/find/id/{ID}
+    > **GET** http://localhost:8080/planet/find/{ID}
     
     - **REQUEST** 
     ```	
         header  {
                     Content-Type:application/json
+		            User-Agent: SWAPI/StarWarsGame
                 }
     ```
     - **RESPONSE**
@@ -79,12 +86,13 @@ Endpoints necessário para consumir os serviços da aplicação:
         - 204 - Planeta não encontrado pelo id
     
 - Encontrar Planeta por Nome
-    > **GET** http://localhost:8080/find/name/{NOME}
+    > **GET** http://localhost:8080/planet/find/{NOME}
     
     - **REQUEST** 
     ```	
         header  {
                     Content-Type:application/json
+		            User-Agent: SWAPI/StarWarsGame
                 }
     ```
     - **RESPONSE**
@@ -92,12 +100,13 @@ Endpoints necessário para consumir os serviços da aplicação:
         - 204 - Planeta não encontrado pelo nome
     
 - Apagar Planeta por Nome
-    > **DELETE** http://localhost:8080/delete/id/{ID}
+    > **DELETE** http://localhost:8080/planet/delete/{ID}
     
     - **REQUEST** 
     ```	
         header  {
                     Content-Type:application/json
+		            User-Agent: SWAPI/StarWarsGame
                 }
     ```
     - **RESPONSE**

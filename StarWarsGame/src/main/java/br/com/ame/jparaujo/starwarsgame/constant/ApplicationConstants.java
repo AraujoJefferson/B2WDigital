@@ -23,6 +23,7 @@ public class ApplicationConstants {
     /**
      * EndPoint>Message
      */
+    public static final String MESSAGE_BADREQUEST = "Chamada não suportada pelo serviço";
     public static final String MESSAGE_FORBIDDEN = "Acesso Negado";
     public static final String MESSAGE_SERVER_ERRO = "Erro Interno no Servidor";
     public static final String MESSAGE_ENDPOINT_PLANET_SEARCH_SWAPI = "Erro ao pesquisar planeta no SWAPI";

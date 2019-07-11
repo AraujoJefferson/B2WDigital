@@ -20,8 +20,8 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 
     @Override
     protected ResponseEntity<Object> handleHttpMessageNotReadable(HttpMessageNotReadableException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
-        loggerREH.error("handleHttpMessageNotReadable");
-        return new ResponseEntity<>(HttpStatus.BAD_REQUEST.value(), HttpStatus.BAD_REQUEST);
+        loggerREH.error(ApplicationConstants.MESSAGE_BADREQUEST);
+        return new ResponseEntity<>(ApplicationConstants.MESSAGE_BADREQUEST, HttpStatus.BAD_REQUEST);
     }
 
     @Override
